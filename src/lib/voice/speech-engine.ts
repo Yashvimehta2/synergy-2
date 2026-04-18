@@ -184,7 +184,7 @@ function levenshtein(a: string, b: string): number {
 }
 
 export class SpeechEngine {
-  private recognition: SpeechRecognition | null = null;
+  private recognition: any | null = null;
   private synthesis: SpeechSynthesis | null = null;
   private isListening = false;
   private onResult: ((transcript: string, command: VoiceCommand) => void) | null = null;
@@ -192,10 +192,10 @@ export class SpeechEngine {
 
   constructor() {
     if (typeof window !== "undefined") {
-      const SpeechRecognition =
-        window.SpeechRecognition || window.webkitSpeechRecognition;
-      if (SpeechRecognition) {
-        this.recognition = new SpeechRecognition();
+      const SpeechRecognitionAPI =
+        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRecognitionAPI) {
+        this.recognition = new SpeechRecognitionAPI();
         this.recognition.continuous = false;
         this.recognition.interimResults = false;
       }
@@ -224,7 +224,7 @@ export class SpeechEngine {
 
     this.recognition.lang = locale;
 
-    this.recognition.onresult = (event) => {
+    this.recognition.onresult = (event: any) => {
       const transcript = event.results[0][0].transcript;
       const { command } = parseVoiceCommand(transcript, locale);
       this.onResult?.(transcript, command);
@@ -291,6 +291,7 @@ export class SpeechEngine {
 // Extend Window interface for webkit prefix
 declare global {
   interface Window {
-    webkitSpeechRecognition: typeof SpeechRecognition;
+    webkitSpeechRecognition: any;
+    SpeechRecognition: any;
   }
 }

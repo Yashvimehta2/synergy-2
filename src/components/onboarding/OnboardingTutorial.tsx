@@ -57,7 +57,7 @@ export function OnboardingTutorial() {
       });
       setUser({ did, name: "Gig Worker", isAuthenticated: true });
       setOnboardingCompleted();
-      router.push("/dashboard");
+      router.push("/home");
     } catch (error) {
       console.error("Failed to create identity:", error);
       setIsCreatingDID(false);

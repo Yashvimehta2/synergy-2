@@ -85,7 +85,7 @@ export default function CredentialsPage() {
             Connect a platform to get your first credential
           </p>
           <button
-            onClick={() => router.push("/dashboard")}
+            onClick={() => router.push("/home")}
             style={{
               padding: "12px 24px",
               borderRadius: "var(--radius-full)",

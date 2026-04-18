@@ -7,11 +7,11 @@ import { SpeechEngine, type VoiceCommand } from "@/lib/voice/speech-engine";
 import { useAppStore } from "@/lib/store/app-store";
 
 const ROUTE_MAP: Record<VoiceCommand, string> = {
-  GO_HOME: "/dashboard",
+  GO_HOME: "/home",
   SHOW_CREDENTIALS: "/credentials",
   SHARE_PROOF: "/share",
   SHOW_SETTINGS: "/settings",
-  CONNECT_PLATFORM: "/dashboard",
+  CONNECT_PLATFORM: "/home",
   SHOW_PROFILE: "/settings",
   UNKNOWN: "",
 };
@@ -74,7 +74,7 @@ export function VoiceFAB() {
     }
   }, [isVoiceActive, setVoiceActive, handleResult, language]);
 
-  if (typeof window !== "undefined" && !window.SpeechRecognition && !window.webkitSpeechRecognition) {
+  if (typeof window !== "undefined" && !(window as any).SpeechRecognition && !(window as any).webkitSpeechRecognition) {
     return null;
   }
 

@@ -78,7 +78,7 @@ function SharePageContent() {
             Connect a platform first to generate proofs
           </p>
           <button
-            onClick={() => router.push("/dashboard")}
+            onClick={() => router.push("/home")}
             style={{
               padding: "12px 28px",
               borderRadius: "var(--radius-full)",

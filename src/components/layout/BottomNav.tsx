@@ -5,7 +5,7 @@ import { Home, FileCheck, Share2, Settings } from "lucide-react";
 import { useState } from "react";
 
 const NAV_ITEMS = [
-  { id: "home", href: "/dashboard", icon: Home, label: "Home" },
+  { id: "home", href: "/home", icon: Home, label: "Home" },
   { id: "credentials", href: "/credentials", icon: FileCheck, label: "Documents" },
   { id: "share", href: "/share", icon: Share2, label: "Share" },
   { id: "settings", href: "/settings", icon: Settings, label: "Settings" },
@@ -37,7 +37,7 @@ export function BottomNav() {
       }}
     >
       {NAV_ITEMS.map((item) => {
-        const isActive = pathname === item.href || (item.href === "/dashboard" && pathname === "/");
+        const isActive = pathname === item.href || (item.href === "/home" && pathname === "/");
         const Icon = item.icon;
         const showLabel = hoveredId === item.id || pressedId === item.id;
 
