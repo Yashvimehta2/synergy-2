@@ -1,0 +1,114 @@
+{
+  "app": {
+    "name": "GigID",
+    "tagline": "Your Work, Your Identity",
+    "description": "Secure digital identity for gig workers"
+  },
+  "nav": {
+    "home": "Home",
+    "credentials": "Documents",
+    "share": "Share",
+    "settings": "Settings"
+  },
+  "onboarding": {
+    "welcome": "Welcome to GigID!",
+    "subtitle": "Build your verified work identity",
+    "step1_title": "Connect Your Work Apps",
+    "step1_desc": "Link Zomato, Uber, Swiggy and more to build your profile",
+    "step2_title": "Get Verified Credentials",
+    "step2_desc": "Your work history becomes verifiable digital documents",
+    "step3_title": "Share with Privacy",
+    "step3_desc": "Prove your income without revealing exact numbers",
+    "step4_title": "Access Loans & Benefits",
+    "step4_desc": "Use your verified profile to unlock financial services",
+    "get_started": "Get Started",
+    "skip": "Skip",
+    "next": "Next",
+    "connect_first": "Connect your first work app"
+  },
+  "dashboard": {
+    "trust_score": "Trust Score",
+    "verified_badges": "Verified Badges",
+    "connected_platforms": "Connected Platforms",
+    "add_platform": "Add Platform",
+    "recent_activity": "Recent Activity",
+    "total_earnings": "Total Earnings",
+    "no_platforms": "No platforms connected yet",
+    "connect_now": "Connect your first platform to get started"
+  },
+  "credentials": {
+    "title": "My Credentials",
+    "subtitle": "Your verified work documents",
+    "no_credentials": "No credentials yet",
+    "connect_to_earn": "Connect a platform to get your first credential",
+    "share_proof": "Share Proof",
+    "view_details": "View Details",
+    "verified": "Verified",
+    "active": "Active",
+    "expired": "Expired",
+    "deliveries": "Deliveries",
+    "rating": "Rating",
+    "earnings_6m": "6-Month Earnings",
+    "issued": "Issued",
+    "expires": "Expires"
+  },
+  "share": {
+    "title": "Share & Prove",
+    "subtitle": "Generate zero-knowledge proofs",
+    "select_credential": "Select Credential",
+    "select_proof": "What do you want to prove?",
+    "generate_proof": "Generate Proof",
+    "generating": "Generating ZK Proof...",
+    "proof_ready": "Proof Ready!",
+    "scan_qr": "Scan this QR code to verify",
+    "copy_link": "Copy Link",
+    "copied": "Copied!",
+    "expires_in": "Expires in 24 hours",
+    "no_credentials_to_share": "Connect a platform first to generate proofs"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "text_size": "Text Size",
+    "light": "Light",
+    "dark": "Dark",
+    "high_contrast": "High Contrast",
+    "normal": "Normal",
+    "large": "Large",
+    "extra_large": "Extra Large",
+    "connected_accounts": "Connected Accounts",
+    "about": "About GigID",
+    "version": "Version",
+    "backup": "Backup Data",
+    "clear_data": "Clear All Data"
+  },
+  "platform": {
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "last_synced": "Last synced",
+    "consent_title": "Allow GigID to access your {platform} data?",
+    "consent_desc": "GigID will read your work history, ratings, and earnings to create verifiable credentials.",
+    "consent_allow": "Allow Access",
+    "consent_deny": "Deny"
+  },
+  "voice": {
+    "listening": "Listening...",
+    "tap_to_speak": "Tap to speak",
+    "command_recognized": "Got it!",
+    "not_recognized": "Didn't catch that. Try again."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "offline": "You're offline",
+    "online": "Back online",
+    "syncing": "Syncing..."
+  }
+}

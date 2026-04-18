@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "GigID",
+    "tagline": "আপনার কাজ, আপনার পরিচয়",
+    "description": "গিগ শ্রমিকদের জন্য সুরক্ষিত ডিজিটাল পরিচয়"
+  },
+  "nav": {
+    "home": "হোম",
+    "credentials": "নথিপত্র",
+    "share": "শেয়ার",
+    "settings": "সেটিংস"
+  },
+  "onboarding": {
+    "welcome": "GigID-তে স্বাগতম!",
+    "subtitle": "আপনার যাচাইকৃত কাজের পরিচয় তৈরি করুন",
+    "get_started": "শুরু করুন",
+    "skip": "এড়িয়ে যান",
+    "next": "পরবর্তী"
+  },
+  "dashboard": {
+    "trust_score": "বিশ্বাস স্কোর",
+    "verified_badges": "যাচাইকৃত ব্যাজ",
+    "connected_platforms": "সংযুক্ত প্ল্যাটফর্ম",
+    "add_platform": "প্ল্যাটফর্ম যোগ করুন",
+    "total_earnings": "মোট আয়",
+    "no_platforms": "এখনো কোনো প্ল্যাটফর্ম সংযুক্ত নয়",
+    "connect_now": "শুরু করতে আপনার প্রথম প্ল্যাটফর্ম সংযুক্ত করুন"
+  },
+  "credentials": {
+    "title": "আমার শংসাপত্র",
+    "share_proof": "প্রমাণ শেয়ার করুন",
+    "verified": "যাচাইকৃত"
+  },
+  "settings": {
+    "title": "সেটিংস",
+    "language": "ভাষা",
+    "theme": "থিম",
+    "text_size": "টেক্সট সাইজ"
+  },
+  "common": {
+    "loading": "লোড হচ্ছে...",
+    "error": "কিছু ভুল হয়েছে",
+    "retry": "আবার চেষ্টা করুন",
+    "offline": "আপনি অফলাইনে আছেন"
+  }
+}
